@@ -13,9 +13,9 @@ char *get_input(void)
 	if (status == -1)
 	{
 		if (input[0] == EOF)
-			printf("EOF\n");
-
+			perror("Error: ");
 		exit(0);
 	}
-	return (input);
+	else
+		return (input);
 }
