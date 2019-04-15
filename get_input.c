@@ -12,8 +12,13 @@ char *get_input(void)
 	status = getline(&input, &bufsize, stdin);
 	if (status == EOF)
 	{
-		exit(0);	
+		if (isatty(STDIN_FILENO))
+		{
+			_putchar('\n');
+			return (input);
+		}
+		else
+			exit(0);
 	}
-	else
-		return (input);
+	return (input);
 }
