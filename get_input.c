@@ -12,8 +12,10 @@ char *get_input(void)
 	status = getline(&input, &bufsize, stdin);
 	if (status == EOF)
 	{
-		_putchar('\n');
-
+		if (input[0] == EOF)
+			perror("Error: ");
+		exit(0);
 	}
-	return (input);
+	else
+		return (input);
 }
