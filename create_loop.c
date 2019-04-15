@@ -4,9 +4,9 @@
   */
 void create_loop(void)
 {
-	char *input;
-	char *parsed_input;
-	char **tokens;
+	char *input = NULL;
+	char *parsed_input = NULL;
+	char **tokens = NULL;
 	int status = 1;
 
 
