@@ -25,8 +25,8 @@ int execute_cmd(char **tokens)
 		if (stat(tokens[0], &st) == 0)
 		{
 			new_path = path[i];
-			strcat(new_path, "/");
-			strcat(new_path, tokens[0]);
+			_strcat(new_path, "/");
+			_strcat(new_path, tokens[0]);
 			tokens[0] = new_path;
 			chdir(current_path);
 			free(path);
@@ -38,4 +38,3 @@ int execute_cmd(char **tokens)
 	}
 	exit(EXIT_SUCCESS);
 }
-
