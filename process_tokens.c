@@ -11,7 +11,7 @@ int process_tokens(char **tokens)
 
 	if (tokens[0] == NULL)
 		return (1);
-	if (strcmp(tokens[0], b_exit) == 0)
+	if (_strcmp(tokens[0], b_exit) == 0)
 		return (-1);
 
 	status = create_fork(tokens);
