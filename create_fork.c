@@ -7,6 +7,7 @@
 int create_fork(char **tokens)
 {
 	pid_t pid;
+	int count = 0;
 	int status = 1;
 
 	pid = fork();
@@ -21,6 +22,7 @@ int create_fork(char **tokens)
 	else
 	{
 			wait(&status);
+			count++;
 	}
 	return (1);
 }
