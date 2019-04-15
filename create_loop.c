@@ -15,14 +15,12 @@ void create_loop(void)
 	{
 
 
-		/* signal(SIGINT, catch_sig); */
 
 
 		put_prompt();
 		input = get_input();
 		parsed_input = get_parsed_input(input);
 		tokens = get_tokens(parsed_input);
-		/* check_builtins(tokens); */
 		status = process_tokens(tokens);
 
 		free(input);
