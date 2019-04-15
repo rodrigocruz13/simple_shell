@@ -12,7 +12,7 @@ int main(int ac, char **av, char **env)
 		exit(0);
 
 	signal(SIGINT, catch_sig);
-	av = av;
+	HSH_ARGV_ZERO = av[0];
 
 	SHELL_ENV_VARS = env;
 
