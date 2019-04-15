@@ -10,7 +10,7 @@ char *get_input(void)
 	int status;
 
 	status = getline(&input, &bufsize, stdin);
-	if (status == -1)
+	if (status == EOF)
 	{
 		if (input[0] == EOF)
 			perror("Error: ");
