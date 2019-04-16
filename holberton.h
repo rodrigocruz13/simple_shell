@@ -16,6 +16,7 @@
 /* Global Variables START */
 char **SHELL_ENV_VARS;
 char *HSH_ARGV_ZERO;
+int HSH_LOOP_COUNT;
 /* Global Variables END */
 
 /* String Fuctions Prototypes */

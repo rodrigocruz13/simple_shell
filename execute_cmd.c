@@ -8,8 +8,12 @@ void _put_error(char **tokens)
 	char *args = HSH_ARGV_ZERO;
 	char *tok = tokens[0];
 	char nf[] = ": not found\n";
+	int count = HSH_LOOP_COUNT;
 
 	_put_string(args);
+	_putchar(':');
+	_putchar(' ');
+	_putchar(count + '0');
 	_putchar(':');
 	_putchar(' ');
 	_put_string(tok);

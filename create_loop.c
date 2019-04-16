@@ -10,11 +10,8 @@ void create_loop(void)
 	int status = 1;
 
 
-
 	while (status == 1)
 	{
-
-
 
 
 		put_prompt();
@@ -26,8 +23,7 @@ void create_loop(void)
 		free(input);
 		free(tokens);
 
-
-
+		HSH_LOOP_COUNT++;
 	}
 
 
