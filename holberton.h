@@ -17,6 +17,7 @@
 char **SHELL_ENV_VARS;
 char *HSH_ARGV_ZERO;
 int HSH_LOOP_COUNT;
+extern char **environ;
 /* Global Variables END */
 
 /* String Fuctions Prototypes */
@@ -26,6 +27,7 @@ void _put_err_string(char *str);
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 void _put_string(char *str);
+void put_env(void);
 /* Shell Prototypes */
 void check_builtins(char **tokens);
 char **get_path(char *parsed_input);
