@@ -7,10 +7,10 @@ void create_loop(void)
 	char *input = NULL;
 	char *parsed_input = NULL;
 	char **tokens = NULL;
-	int status = 1;
+	int status = 0;
 
 
-	while (status == 1)
+	while (1)
 	{
 
 
@@ -18,7 +18,8 @@ void create_loop(void)
 		input = get_input();
 		parsed_input = get_parsed_input(input);
 		tokens = get_tokens(parsed_input);
-		status = process_tokens(tokens);
+		status = process_tokens(tokens, status);
+
 		free(input);
 		free(tokens);
 
