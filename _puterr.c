@@ -9,5 +9,5 @@
  */
 int _puterr(char c)
 {
-	return (write(STDERR_FILENO, &c, 1));
+	return (write(2, &c, 1));
 }
