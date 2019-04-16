@@ -12,7 +12,7 @@ int process_tokens(char **tokens)
 	if (tokens[0] == NULL)
 		return (1);
 	if (_strcmp(tokens[0], b_exit) == 0)
-		return(0);
+		exit(0);
 
 	status = create_fork(tokens);
 
