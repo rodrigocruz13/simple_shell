@@ -10,14 +10,14 @@ void _put_error(char **tokens)
 	char nf[] = ": not found\n";
 	int count = HSH_LOOP_COUNT;
 
-	_put_string(args);
-	_putchar(':');
-	_putchar(' ');
-	_putchar(count + '0');
-	_putchar(':');
-	_putchar(' ');
-	_put_string(tok);
-	_put_string(nf);
+	_put_err_string(args);
+	_puterr(':');
+	_puterr(' ');
+	_puterr(count + '0');
+	_puterr(':');
+	_puterr(' ');
+	_put_err_string(tok);
+	_put_err_string(nf);
 
 }
 /**

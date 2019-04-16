@@ -21,6 +21,8 @@ int HSH_LOOP_COUNT;
 
 /* String Fuctions Prototypes */
 int _putchar(char c);
+int _puterr(char c);
+void _put_err_string(char *str);
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 void _put_string(char *str);
