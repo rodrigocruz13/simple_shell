@@ -61,7 +61,7 @@ read from the standard input or from a file. hsh also incorporates features
 from C shells (ksh and csh).
 .Pp
 hsh is intended to be a conformant implementation of the Shell and Utilities
-portion of the IEEE POSIX specification (IEEE Standard 1003.1). Bash can
+portion of the IEEE POSIX specification (IEEE Standard 1003.1). Hsh can
 be configured to be POSIX-conformant by default
 .El
 
@@ -188,11 +188,11 @@ name does not match a function, the shell searches for it in the list of shell
 builtins. If a match is found, that builtin is invoked.
 .Pp
 If the name is neither a shell function nor a builtin, and contains no slashes,
-bash searches each element of the PATH for a directory containing an executable
-file by that name. Bash uses a hash table to remember the full pathnames of
+hsh searches each element of the PATH for a directory containing an executable
+file by that name. hsh uses a hash table to remember the full pathnames of
 executable files (see hash under SHELL BUILTIN COMMANDS below). A full search of
 the directories in PATH is performed only if the command is not found in the hash
-table. If the search is unsuccessful, the shell prints an error message and
+table. If the search is unsuccessful, the shell prints an error message and:
 returns an exit status of 127.
 .Pp
 If the search is successful, or if the command name contains 1 or more slashes,
@@ -228,7 +228,7 @@ followed by the name of the program, followed by the command arguments, if any.
 .Pp
 For the shell's purposes, a command which exits with a zero exit status has
 succeeded. An exit status of zero indicates success. A non-zero exit status
-indicates failure. When a command terminates on a fatal signal N, bash uses the
+indicates failure. When a command terminates on a fatal signal N, hsh uses the
 value of 128+N as the exit status.
 .Pp
 If a command is not found, the child process created to execute it returns a
@@ -251,12 +251,12 @@ status of 2 to indicate incorrect usage.
 .\" SIGNALS HEADER
 .Sh SIGNALS
 .Pp
-When bash is interactive, in the absence of any traps, it ignores SIGTERM (so
+When hsh is interactive, in the absence of any traps, it ignores SIGTERM (so
 that kill 0 does not kill an interactive shell), and SIGINT is caught and
-handled (so that the wait builtin is interruptible). In all cases, bash ignores
-SIGQUIT. If job control is in effect, bash ignores SIGTTIN, SIGTTOU, and SIGTSTP
+handled (so that the wait builtin is interruptible). In all cases, hsh ignores
+SIGQUIT. If job control is in effect, hsh ignores SIGTTIN, SIGTTOU, and SIGTSTP
 .Pp
-Non-builtin commands run by bash have signal handlers set to the values
+Non-builtin commands run by hsh have signal handlers set to the values
 inherited by the shell from its parent. When job control is not in effect,
 asynchronous commands ignore SIGINT and SIGQUIT in addition to these inherited
 handlers. Commands run as a result of command substitution ignore the keyboard
@@ -298,7 +298,7 @@ to develop a program similar to a shell
 .\" List links in ascending order by section, alphabetically within a section.
 .\" Please do not reference files that do not exist without filing a bug report
 .Xr sh 1 ,
-.Xr bash 2 ,
+.Xr hsh 2 ,
 .Xr c 1
 
 
