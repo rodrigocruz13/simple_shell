@@ -19,6 +19,8 @@ char *HSH_ARGV_ZERO;
 /* Global Variables END */
 
 /* String Fuctions Prototypes */
+void put_env(void);
+void _put_string(char *str);
 int _putchar(char c);
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
