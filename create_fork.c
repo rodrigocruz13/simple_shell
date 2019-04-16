@@ -7,13 +7,12 @@
 int create_fork(char **tokens)
 {
 	pid_t pid;
-	int count = 0;
-	int status = 1;
+	int status = 0;
 
 	pid = fork();
 	if (pid == 0)
 	{
-		execute_cmd(tokens);
+		status = execute_cmd(tokens);
 	}
 	else if (pid < 0)
 	{
@@ -21,8 +20,13 @@ int create_fork(char **tokens)
 	}
 	else
 	{
-			wait(&status);
-			count++;
+			waitpid(pid, &status, 0);
+
+			if (WIFEXITED(status))
+			{
+				status = WEXITSTATUS(status);
+			}
+
 	}
-	return (1);
+	return (status);
 }

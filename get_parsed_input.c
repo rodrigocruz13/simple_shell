@@ -9,5 +9,6 @@ char *get_parsed_input(char *input)
 	char *parsed_input;
 
 	parsed_input = input;
+
 	return (parsed_input);
 }

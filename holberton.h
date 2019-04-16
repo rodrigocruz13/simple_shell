@@ -33,7 +33,7 @@ void check_builtins(char **tokens);
 char **get_path(char *parsed_input);
 int execute_cmd(char **tokens);
 int create_fork(char **tokens);
-int process_tokens(char **tokens);
+int process_tokens(char **tokens, int status);
 char **get_tokens(char *parsed_input);
 char *get_parsed_input(char *input);
 char *get_input(void);

@@ -2,11 +2,11 @@
 /**
   * process_tokens - checks for builtins and null commands
   * @tokens: tokenized user input
+  * @status: status of previous child
   * Return: status of forking process
   */
-int process_tokens(char **tokens)
+int process_tokens(char **tokens, int status)
 {
-	int status = 0;
 	char *b_exit = "exit";
 	char *b_env = "env";
 
@@ -15,7 +15,7 @@ int process_tokens(char **tokens)
 	if (_strcmp(tokens[0], b_exit) == 0)
 	{
 		free(tokens);
-		exit(EXIT_SUCCESS);
+		exit(status);
 	}
 	if (_strcmp(tokens[0], b_env) == 0)
 	{
@@ -23,6 +23,5 @@ int process_tokens(char **tokens)
 		return (1);
 	}
 	status = create_fork(tokens);
-
 	return (status);
 }

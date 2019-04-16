@@ -84,5 +84,5 @@ int execute_cmd(char **tokens)
 	_put_error(tokens);
 	free(tokens);
 	free(path);
-	exit(EXIT_SUCCESS);
+	exit(-1);
 }
