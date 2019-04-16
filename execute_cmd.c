@@ -1,19 +1,8 @@
 #include "holberton.h"
 /**
- * _put_string - prints a string
- * @str: string to print
- */
-void _put_string(char *str)
-{
-	int i = 0;
-
-	for (i = 0; str[i] != '\0'; i++)
-		_putchar(str[i]);
-}
-/**
- * _put_error - prints an error message
- * @tokens: command that is an error
- */
+  * _put_error - prints error message
+  * @tokens: command to reference in error
+  */
 void _put_error(char **tokens)
 {
 	char *args = HSH_ARGV_ZERO;
@@ -69,7 +58,7 @@ int execute_cmd(char **tokens)
 	{
 		ex_dot_slash(tokens, current_path);
 	}
-	printf("Tokens[0]: %s\n", tokens[0]);
+
 	while (path[i] != NULL)
 	{
 		chdir(path[i]);

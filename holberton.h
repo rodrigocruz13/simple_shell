@@ -22,7 +22,7 @@ char *HSH_ARGV_ZERO;
 int _putchar(char c);
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
-
+void _put_string(char *str);
 /* Shell Prototypes */
 void check_builtins(char **tokens);
 char **get_path(char *parsed_input);
