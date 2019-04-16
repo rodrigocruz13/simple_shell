@@ -18,8 +18,8 @@ void create_loop(void)
 		input = get_input();
 		parsed_input = get_parsed_input(input);
 		tokens = get_tokens(parsed_input);
-		free(input);
 		status = process_tokens(tokens);
+		free(input);
 		free(tokens);
 
 		HSH_LOOP_COUNT++;
