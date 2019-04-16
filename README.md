@@ -1,6 +1,6 @@
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
-# SIMPLE SHELL -  (15/04/2019) - 
-:rocket: Star us on GitHub — *it helps*! :rocket:
+# SIMPLE SHELL -  (15/04/2019) -
+:rocket: Star us on GitHub  *it helps*! :rocket:
 
 ![ssssshean connery](https://i.imgur.com/uLoz3WY.jpg)
 
@@ -9,41 +9,37 @@
 
 ### Screenshots
 
-![alt text](image)
+![1](https://i.imgur.com/vp8yVJp.jpg)
+
 
 ### Current features
+* Finds the path for commands and then executes it
+* Shows some error messages when a command is not found.
 * Other stuff I can't think of right now...
 
-### Other features!
-  - a
 
-
-## Shell repository
-
-
-### Files
+## Files
 
 This is the list of the files required to compile and create the shell.
 
-| Type | File   | Description |
-| ------  |  -----------  | ----------- |
-|Documentation| README.md |Readme file|
-|Documentation|man_shell|Man page|
-| Header file| holberton.h | Main file header. Contains the list of functions and the connection with some other headers|
-|c file|catch_sig.c|Deals with the interruption signals|
-|c file|check_builtins.c||
-|c file|create_fork.c||
-|c file|create_loop.c||
-|c file|execute_cmd.c||
-|c file|get_input2.c||
-|c file|get_input.c||
-|c file|get_parsed_input.c||
-|c file|get_path.c||
-|c file|get_tokens.c||
-|c file|main.c||
-|c file|process_tokens.c||
-|c file|put_prompt.c| Prints the "$" as prompt|
-|executable file|hsh||
+| # | Type | File   | Description |
+| -- |------  |  -----------  | ----------- |
+|1|Documentation| README.md |Readme file|
+|2|Documentation|man_shell|Man page|
+|3| Header file| holberton.h | Main header. Contains the list of functions and libraries needed to compile the interpreter|
+|4|c file|catch_sig.c|Deals with the SIGINT signals|
+|5|c file|check_builtins.c|Checks if a command is a builtin|
+|6|c file|create_fork.c|Creates a child process to execute commands|
+|7|c file|create_loop.c|Waits for input and then sends off for processing|
+|8|c file|execute_cmd.c|Executes commands sent by user|
+|9|c file|get_input.c|Gets input from user|
+|10|c file|get_parsed_input.c|Parses input sent by user|
+|11|c file|get_path.c|Parses program path|
+|12|c file|get_tokens.c|Tokenizes user input|
+|13|c file|main.c|Entry point for shell|
+|14|c file|process_tokens.c|Checks for built-ins and null commands|
+|15|c file|put_prompt.c| Prints prompt "$ " to terminal|
+|16|Executable file|hsh||
 
 If you want to install **hsh shell**, the source [files are here]([https://github.com/ryanhudson/draft_shell/tree/master](https://github.com/ryanhudson/draft_shell/tree/master)). You can download them, compile then and install it with no further permission.
 #####  Caution: Install the shell under your own risk !
@@ -78,7 +74,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 ## License
 
-This program is licensed under the terms of the GPL Open Source license and is available for free. 
+This program is licensed under the terms of the GPL Open Source license and is available for free.
 This document is for the first shell release (1.0)
 
 
@@ -89,7 +85,7 @@ Operating systems (OS)
 * [Linux](https://www.linux.org)
 * [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)
 
-Editors 
+Editors
 * [vi basic commands](https://www.ccsf.edu/Pub/Fac/vi.html)
 * [vi unix editor](https://sourceforge.net/projects/ex-vi/)
 * [Emacs](https://www.gnu.org/software/emacs/)
@@ -103,9 +99,14 @@ Compilator
 ## About
 
 
-- A Full Stack Engineer is an engineer who is able to understand and work on any level of a software application: starting from the hardware, system and network, to the security and scalability. Our students will be familiar with software architecture, data modeling, coding, testing, shipping, user experience, design, project management, marketing, … While one can’t be an expert in all of the layers, students will have the foundation required to be able to navigate any of those.
-It also means that our students will be able to interact with low and high level technologies: for code, it will mean from assembly to the latest programming framework.
-for system infrastructure, it will mean creating your infrastructure from scratch, to using a ready-to-go Cloud solution. 
+- A Full Stack Engineer is an engineer who is able to understand and work on any level of a software
+application: starting from the hardware, system and network, to the security and scalability. Our students
+will be familiar with software architecture, data modeling, coding, testing, shipping, user experience,
+design, project management, marketing,  While one cant be an expert in all of the layers, students
+will have the foundation required to be able to navigate any of those.
+It also means that our students will be able to interact with low and high level technologies: for code,
+it will mean from assembly to the latest programming framework. For system infrastructure, it will mean
+creating your infrastructure from scratch, to using a ready-to-go Cloud solution.
 
 Kris Bredemeier - Holberton School (SF)
 
@@ -117,7 +118,9 @@ Kris Bredemeier - Holberton School (SF)
 ![Rodrigo](https://i.imgur.com/36L7XQD.jpg)| Rodrigo Cruz | 754@holbertonschool.com
 #
 > SPECIAL THANKS
-> To all our peers, mentors, and staff from Holberton School in San Francisco, New Heaven and Bogota. 
->Every day is a journey for new discoveries, a route that you walk alone but do not feel that way, because without your time, help and dedication to try to explain those issues that we do not understand, none of this would have been possible.
+> To all our peers, mentors, and staff from Holberton School in San Francisco, New Heaven and Bogota.
+>Every day is a journey for new discoveries, a route that you walk alone but do not feel that way, because
+without your time, help and dedication to try to explain those issues that we do not understand, none of
+this would have been possible.
 
 ![logo](https://i.imgur.com/LXW9lwr.png)
