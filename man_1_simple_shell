@@ -154,7 +154,24 @@ command is terminated by signal n.
 
 
 
+.\" USAGE HEADER
+.Sh USAGE
 
+Run the executable file for starting the shell: ./hsh`
+- Type any command that you would use inside the regular shell and hit enter.
+- The output of the command is shown, or an error message is displayed if the
+command was not found.
+
+
+
+
+.\" SAMPLES HEADER
+.Sh SAMPLES
+
+$		The prompt is displayed after typing: ./hsh`
+$ /bin/ls	Executes the command ls`
+$ pwd		Shows the current directory`
+$ exit 		Exits the program`
 
 
 
@@ -303,11 +320,11 @@ This program runs in a unique manner
 .\" AUTHORS HEADER
 .Sh AUTHORS
 
-.Aq 654@holbertonschool.com
+654@holbertonschool.com
 Ryan Hudson
 .Pp
 
-.Aq 754@holbertonschool.com
+754@holbertonschool.com
 Rodrigo Cruz
 .Pp
 .
