@@ -123,4 +123,4 @@ Kris Bredemeier - Holberton School (SF)
 without your time, help and dedication to try to explain those issues that we do not understand, none of
 this would have been possible.
 
-![logo](https://i.imgur.com/LXW9lwr.png)
+![logo](https://i.imgur.com/G6PMIhj.png)
