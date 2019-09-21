@@ -115,7 +115,8 @@ Kris Bredemeier - Holberton School (SF)
  Photo  | Name | Email
  -----  | ---- | -----
 ![Ryan](https://i.imgur.com/LeZPQqe.jpg)| Ryan Hudson | 654@holbertonschool.com
-![Rodrigo](https://i.imgur.com/dAB4rZ5.jpg)| Rodrigo Cruz | 754@holbertonschool.com
+![Rodrigo](https://i.imgur.com/C2LoErX.jpg)| Rodrigo Cruz | 754@holbertonschool.com
+
 #
 > SPECIAL THANKS
 > To all our peers, mentors, and staff from Holberton School in San Francisco, New Heaven and Bogota.
